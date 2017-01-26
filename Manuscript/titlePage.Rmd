@@ -1,0 +1,49 @@
+
+\begin{centering}
+
+$ $
+
+\vspace{0.1 cm}
+
+\LARGE
+
+{\bf Joint intensity fusion}
+
+\vspace{0.2 cm}
+
+\normalsize
+
+Brian B. Avants$^{1\dagger}$,
+Nicholas J. Tustison$^{2}$,
+\ldots$^{3}$
+
+\vspace{0.25 cm}
+
+\small
+
+$^1$Department of Radiology, University of Pennsylvania, Philadelphia, PA
+
+$^2$Department of Radiology and Medical Imaging, University of Virginia, Charlottesville, VA
+
+$^3$Some other institution
+
+\end{centering}
+
+\vspace{1.0 cm}
+
+\small
+
+Corresponding author: \
+Brian B. Avants \
+Cambridge, MA  XXXXX \
+stnava@gmail.com \
+
+\noindent\rule{4cm}{0.4pt}
+
+\footnotesize
+
+${\dagger}$ Currently employed by Biogen (Cambridge, MA).  
+
+\newpage
+
+\normalsize
