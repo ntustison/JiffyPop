@@ -2,12 +2,46 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Nick Tustison at 2016-12-29 15:38:50 -0800 
+%% Created for Nick Tustison at 2017-01-30 19:56:12 -0800 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Heckemann:2006aa,
+	Abstract = {Regions in three-dimensional magnetic resonance (MR) brain images can be classified using protocols for manually segmenting and labeling structures. For large cohorts, time and expertise requirements make this approach impractical. To achieve automation, an individual segmentation can be propagated to another individual using an anatomical correspondence estimate relating the atlas image to the target image. The accuracy of the resulting target labeling has been limited but can potentially be improved by combining multiple segmentations using decision fusion. We studied segmentation propagation and decision fusion on 30 normal brain MR images, which had been manually segmented into 67 structures. Correspondence estimates were established by nonrigid registration using free-form deformations. Both direct label propagation and an indirect approach were tested. Individual propagations showed an average similarity index (SI) of 0.754+/-0.016 against manual segmentations. Decision fusion using 29 input segmentations increased SI to 0.836+/-0.009. For indirect propagation of a single source via 27 intermediate images, SI was 0.779+/-0.013. We also studied the effect of the decision fusion procedure using a numerical simulation with synthetic input data. The results helped to formulate a model that predicts the quality improvement of fused brain segmentations based on the number of individual propagated segmentations combined. We demonstrate a practicable procedure that exceeds the accuracy of previous automatic methods and can compete with manual delineations.},
+	Author = {Heckemann, Rolf A and Hajnal, Joseph V and Aljabar, Paul and Rueckert, Daniel and Hammers, Alexander},
+	Date-Added = {2017-01-31 03:55:02 +0000},
+	Date-Modified = {2017-01-31 03:55:02 +0000},
+	Doi = {10.1016/j.neuroimage.2006.05.061},
+	Journal = {Neuroimage},
+	Journal-Full = {NeuroImage},
+	Mesh = {Adult; Algorithms; Automatic Data Processing; Brain; Decision Support Techniques; Female; Humans; Image Processing, Computer-Assisted; Magnetic Resonance Imaging; Male; Middle Aged; Models, Statistical; Quality Control; Reference Values},
+	Month = {Oct},
+	Number = {1},
+	Pages = {115-26},
+	Pmid = {16860573},
+	Pst = {ppublish},
+	Title = {Automatic anatomical brain MRI segmentation combining label propagation and decision fusion},
+	Volume = {33},
+	Year = {2006},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1016/j.neuroimage.2006.05.061}}
+
+@article{Kitller:1998aa,
+	Author = {Josef Kittler and Mohamad Hatef and Robert P. W. Duin and Jiri Matas},
+	Date-Added = {2017-01-31 03:28:43 +0000},
+	Date-Modified = {2017-01-31 03:35:11 +0000},
+	Journal = {IEEE Trans Pattern Anal Mach Intell},
+	Title = {On combining classifiers}}
+
+@book{Surowiecki2004,
+	Author = {James Surowiecki},
+	Date-Added = {2017-01-31 02:32:40 +0000},
+	Date-Modified = {2017-01-31 02:35:24 +0000},
+	Publisher = {Doubleday; Anchor},
+	Title = {The Wisdom of Crowds: Why the Many Are Smarter Than the Few and How Collective Wisdom Shapes Business, Economies, Societies and Nations},
+	Year = {2004}}
 
 @article{Avants:2010ab,
 	Abstract = {We present a new algorithm for reliable, unbiased, multivariate longitudinal analysis of cortical and white matter atrophy rates with penalized statistical methods. The pipeline uses a step-wise approach to transform and personalize template information first to a single-subject template (SST) and then to the individual's time series data. The first stream of information flows from group template to the SST; the second flows from the SST to the individual time-points and provides unbiased, prior-based segmentation and measurement of cortical thickness. MRI-bias correction, consistent longitudinal segmentation, cortical parcellation and cortical thickness estimation are all based on strong use of the subject-specific priors built from initial diffeomorphic mapping between the SST and optimal group template. We evaluate our approach with both test-retest data and with application to a driving biological problem. We use test-retest data to show that this approach produces (a) zero change when the retest data contains the same image content as the test data and (b) produces normally distributed, low variance estimates of thickness change centered at zero when test-retest data is collected near in time to test data. We also show that our approach--when combined with sparse canonical correlation analysis--reveals plausible, significant, annualized decline in cortical thickness and white matter volume when contrasting frontotemporal dementia and normal aging.},

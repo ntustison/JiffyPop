@@ -1,2 +1,13 @@
 
 # Introduction
+
+"Wisdom-of-crowds" [@Surowiecki2004] approaches to medical image segmentation have
+proven remarkably successful.  Recent international competitions such as the
+brain labeling challenge associated with the MICCAI 2012 Workshop on Multi-Atlas
+Labeling and the 2013 MICCAI Challenge Workshop on Segmentation:
+Algorithms, Theory and Applications have demonstrated the superiority of these
+consensus-based approaches when coupled with high-performing image spatial
+normalization algorithms.
+
+Early techniques such as single atlas label assignment [@Heckemann:2006aa] and majority voting
+[@Kitller:1998aa]

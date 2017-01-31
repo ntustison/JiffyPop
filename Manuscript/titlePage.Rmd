@@ -7,7 +7,7 @@ $ $
 
 \LARGE
 
-{\bf Joint intensity fusion}
+{\bf Joint Intensity Fusion}
 
 \vspace{0.2 cm}
 
