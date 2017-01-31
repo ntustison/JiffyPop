@@ -1,6 +1,25 @@
 
 # Abstract
 
-_Keywords:_  ANTs, 
+Consensus techniques have demonstrated remarkable utility in various medical
+imaging segmentation tasks.  Joint label fusion (JLF) employs spatially normalized
+atlas sets---gray-scale intensity images with corresponding segmentation labels---to
+segment unlabeled images using various weighting schemes.  The technique
+of [@Wang:2013aa;@Wang:2013ab] avoids informational redundancy in the atlas voting
+scheme by considering the atlas set as a whole versus individually in determining
+the optimal weights.  In this work we extend this methodology to the
+estimation of intensity information in multi-modal image data sets, which
+we denote as _joint intensity fusion (JIF)_.  JIF has several potential applications
+including removal of imaging artifacts (e.g., motion), removal of pathologies
+(e.g., tumour, lesions), imputation of missing modality data, and template
+enhancement.  Evaluation is performed on a variety of data \textcolor{red}{
+\ldots need more here}.  We provide an open-source implementation in the the well-known
+Advanced Normalization Tools (ANTs) software package which subsumes the
+functionality reported in [@Wang:2013ab] in addition to offering further
+enhancements such as multi-threading and a non-negative least-squares calculation
+of the atlas weights.  
+
+
+_Keywords:_  ANTs, atlases, denoising, motion correction, non-negative least squares.
 
 \clearpage
