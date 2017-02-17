@@ -104,6 +104,15 @@ However, such a choice could potentially produce negative weights which is
 unintuitive.  This led us to include a non-negative least squares solution
 option [@lawson] to ensure non-negative weights.
 
+__Patch metric.__ To determine the weights at a current voxel in the target image,
+a neighborhood patch centered at the current voxel is compared with neighboring patches in
+each atlas.  The similarity between the target and atlas neighborhood patches
+can be calculated using a variety of intensity similarity metrics.  Contributions
+from additional modality images are simply concatenated into the similarity metric
+calculation.  The original JLF work employed Pearson's correlation
+[@Wang:2013ab;@Wang:2013aa] which works very well.  Future work includes the
+possible inclusion of other patch-based metrics (e.g., mean squares [@Manjon:2010ab]).
+
 [^1]:  Although other techniques, such as QR and singular value decomposition, are more stable,
 a sufficiently large ``Alpha`` value ensures non-singularity.  However, if the
 condition number is too small, SVD is used.
