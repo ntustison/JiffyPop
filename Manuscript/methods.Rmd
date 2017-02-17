@@ -21,14 +21,17 @@
 
 Similar to the other ANTs programs, the software encapsulating
 the methods discussed in this work are built upon the Insight Toolkit
-(ITK) and conform to ITK coding standards.  Here we describe the implementation
+(ITK) and conform to ITK coding standards.  In this section we describe the implementation
 and usage interface.  The program ``antsJointFusion.cxx`` uses an intuitive
-command line interface developed specifically for the ANTs toolkit.  See
-Listing 1 for the short help menu available
+command line interface developed specifically for the ANTs toolkit.  
+See Listing 1 for the short help menu available
 at the command line.  A more comprehensive long help menu can be produced
 (not shown).  The latter provides references and documentation concerning
-parameter options.  
+parameter options.  ``antsJointFusion.cxx`` is the interface for the underlying
+ITK-style class:
 
+* ``itkWeightedVotingFusionImageFilter.h``
+* ``itkWeightedVotingFusionImageFilter.hxx``
 
 \begin{lstlisting}
 COMMAND:
@@ -62,3 +65,36 @@ OPTIONS:
      -h
      --help
 \end{lstlisting}
+
+``antsJointFusion`` has a number of available parameters (see Listing 1) permitting
+operation on 2-, 3- or 4-dimensional data.  The default input parameters and
+corresponding definitions are given below:
+
+__Target image set.__  This input (or set of inputs) comprises the image set to be
+matched by the input atlases.  If more than one target image is specified, it is
+assumed that all modalities are spatially normalized.    If JIF is to be performed
+then all target modalities are inferred with only the first image being used for
+atlas weighting.  For example, suppose the set of input atlases consists of $N$
+modality images per atlas.  Only the first image needs to be specified for the set
+of target input images although all $N$ target modalities will be estimated
+using JIF.
+
+__Atlas images.__ Each atlas set specified by the ``-g`` option consists of one or
+more modality.  It is assumed that these atlases have already been normalized to the
+target image.  The ordering of the modalities for each atlas is assumed to match the
+ordering specified for the target image and the other atlases.
+
+__Atlas labels.__ When performing JLF, a set of atlas labels is provided with
+each atlas set.  Pairing of each atlas label, ``-l`` option,  with each atlas,
+``-g`` is assumed from the order of appearance on the command line.   Note that
+specification of the atlas labels is optional for performing JIF.
+
+__Alpha.__  The damping parameter ``Alpha`` is the constant value added to
+the diagonal elements of the weight(???) matrix (see Equation ()) to prevent the
+possible inversion of a singular matrix.  The larger the value, the greater the
+stability for matrix inversion but the further away from the true solution. The
+default value is 0.1.
+
+__Beta.__  
+
+__Constrain non-negative.__  To estimate the matrix inversion.

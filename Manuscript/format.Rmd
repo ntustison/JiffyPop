@@ -23,7 +23,7 @@ header-includes:
          keywordstyle=\color{magenta},
          numberstyle=\tiny\color{codegray},
          stringstyle=\color{codepurple},
-         basicstyle=\linespread{0.8}\scriptsize\ttfamily,
+         basicstyle=\linespread{1.0}\scriptsize\ttfamily,
          breakatwhitespace=false,         
          breaklines=true,                 
          captionpos=b,                    
