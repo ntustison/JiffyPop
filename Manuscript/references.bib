@@ -2,12 +2,90 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Nick Tustison at 2017-01-30 19:56:12 -0800 
+%% Created for Nick Tustison at 2017-02-16 16:14:09 -0800 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Klein:2005aa,
+	Abstract = {BACKGROUND: To make inferences about brain structures or activity across multiple individuals, one first needs to determine the structural correspondences across their image data. We have recently developed Mindboggle as a fully automated, feature-matching approach to assign anatomical labels to cortical structures and activity in human brain MRI data. Label assignment is based on structural correspondences between labeled atlases and unlabeled image data, where an atlas consists of a set of labels manually assigned to a single brain image. In the present work, we study the influence of using variable numbers of individual atlases to nonlinearly label human brain image data.
+METHODS: Each brain image voxel of each of 20 human subjects is assigned a label by each of the remaining 19 atlases using Mindboggle. The most common label is selected and is given a confidence rating based on the number of atlases that assigned that label. The automatically assigned labels for each subject brain are compared with the manual labels for that subject (its atlas). Unlike recent approaches that transform subject data to a labeled, probabilistic atlas space (constructed from a database of atlases), Mindboggle labels a subject by each atlas in a database independently.
+RESULTS: When Mindboggle labels a human subject's brain image with at least four atlases, the resulting label agreement with coregistered manual labels is significantly higher than when only a single atlas is used. Different numbers of atlases provide significantly higher label agreements for individual brain regions.
+CONCLUSION: Increasing the number of reference brains used to automatically label a human subject brain improves labeling accuracy with respect to manually assigned labels. Mindboggle software can provide confidence measures for labels based on probabilistic assignment of labels and could be applied to large databases of brain images.},
+	Author = {Klein, Arno and Mensh, Brett and Ghosh, Satrajit and Tourville, Jason and Hirsch, Joy},
+	Date-Added = {2017-02-17 00:08:32 +0000},
+	Date-Modified = {2017-02-17 00:08:32 +0000},
+	Doi = {10.1186/1471-2342-5-7},
+	Journal = {BMC Med Imaging},
+	Journal-Full = {BMC medical imaging},
+	Month = {Oct},
+	Pages = {7},
+	Pmc = {PMC1283974},
+	Pmid = {16202176},
+	Pst = {epublish},
+	Title = {Mindboggle: automated brain labeling with multiple atlases},
+	Volume = {5},
+	Year = {2005},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1186/1471-2342-5-7}}
+
+@article{Warfield:2004aa,
+	Abstract = {Characterizing the performance of image segmentation approaches has been a persistent challenge. Performance analysis is important since segmentation algorithms often have limited accuracy and precision. Interactive drawing of the desired segmentation by human raters has often been the only acceptable approach, and yet suffers from intra-rater and inter-rater variability. Automated algorithms have been sought in order to remove the variability introduced by raters, but such algorithms must be assessed to ensure they are suitable for the task. The performance of raters (human or algorithmic) generating segmentations of medical images has been difficult to quantify because of the difficulty of obtaining or estimating a known true segmentation for clinical data. Although physical and digital phantoms can be constructed for which ground truth is known or readily estimated, such phantoms do not fully reflect clinical images due to the difficulty of constructing phantoms which reproduce the full range of imaging characteristics and normal and pathological anatomical variability observed in clinical data. Comparison to a collection of segmentations by raters is an attractive alternative since it can be carried out directly on the relevant clinical imaging data. However, the most appropriate measure or set of measures with which to compare such segmentations has not been clarified and several measures are used in practice. We present here an expectation-maximization algorithm for simultaneous truth and performance level estimation (STAPLE). The algorithm considers a collection of segmentations and computes a probabilistic estimate of the true segmentation and a measure of the performance level represented by each segmentation. The source of each segmentation in the collection may be an appropriately trained human rater or raters, or may be an automated segmentation algorithm. The probabilistic estimate of the true segmentation is formed by estimating an optimal combination of the segmentations, weighting each segmentation depending upon the estimated performance level, and incorporating a prior model for the spatial distribution of structures being segmented as well as spatial homogeneity constraints. STAPLE is straightforward to apply to clinical imaging data, it readily enables assessment of the performance of an automated image segmentation algorithm, and enables direct comparison of human rater and algorithm performance.},
+	Author = {Warfield, Simon K and Zou, Kelly H and Wells, William M},
+	Date-Added = {2017-02-17 00:03:48 +0000},
+	Date-Modified = {2017-02-17 00:03:48 +0000},
+	Doi = {10.1109/TMI.2004.828354},
+	Journal = {IEEE Trans Med Imaging},
+	Journal-Full = {IEEE transactions on medical imaging},
+	Mesh = {Algorithms; Brain; Decision Making, Computer-Assisted; Humans; Image Enhancement; Image Interpretation, Computer-Assisted; Infant, Newborn; Magnetic Resonance Imaging; Markov Chains; Models, Statistical; Observer Variation; Phantoms, Imaging; Reproducibility of Results; Sensitivity and Specificity},
+	Month = {Jul},
+	Number = {7},
+	Pages = {903-21},
+	Pmc = {PMC1283110},
+	Pmid = {15250643},
+	Pst = {ppublish},
+	Title = {Simultaneous truth and performance level estimation (STAPLE): an algorithm for the validation of image segmentation},
+	Volume = {23},
+	Year = {2004},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/TMI.2004.828354}}
+
+@article{Rohlfing:2003aa,
+	Abstract = {It is well-known in the pattern recognition community that the accuracy of classifications obtained by combining decisions made by independent classifiers can be substantially higher that the accuracy of the individual classifiers. In order to combine multiple segmentations we introduce two extensions to an expectation maximization (EM) algorithm for ground truth estimation based on multiple experts (Warfield et al., MICCAI 2002). The first method repeatedly applies the Warfield algorithm with a subsequent integration step. The second method is a multi-label extension of the Warfield algorithm. Both extensions integrate multiple segmentations into one that is closer to the unknown ground truth than the individual segmentations. In atlas-based image segmentation, multiple classifiers arise naturally by applying different registration methods to the same atlas, or the same registration method to different atlases, or both. We perform a validation study designed to quantify the success of classifier combination methods in atlas-based segmentation. By applying random deformations, a given ground truth atlas is transformed into multiple segmentations that could result from imperfect registrations of an image to multiple atlas images. We demonstrate that a segmentation produced by combining multiple individual registration-based segmentations is more accurate for the two EM methods we propose than for simple label averaging.},
+	Author = {Rohlfing, Torsten and Russakoff, Daniel B and Maurer, Calvin R},
+	Date-Added = {2017-02-17 00:02:42 +0000},
+	Date-Modified = {2017-02-17 00:02:42 +0000},
+	Journal = {Inf Process Med Imaging},
+	Journal-Full = {Information processing in medical imaging : proceedings of the ... conference},
+	Mesh = {Algorithms; Animals; Atlases as Topic; Bees; Brain; Computer Simulation; Expert Systems; Image Enhancement; Image Interpretation, Computer-Assisted; Imaging, Three-Dimensional; Likelihood Functions; Models, Biological; Models, Statistical; Pattern Recognition, Automated; Reproducibility of Results; Sensitivity and Specificity; Subtraction Technique},
+	Month = {Jul},
+	Pages = {210-21},
+	Pmid = {15344459},
+	Pst = {ppublish},
+	Title = {Expectation maximization strategies for multi-atlas multi-label segmentation},
+	Volume = {18},
+	Year = {2003}}
+
+@article{Iglesias:2015aa,
+	Abstract = {Multi-atlas segmentation (MAS), first introduced and popularized by the pioneering work of Rohlfing, et al. (2004), Klein, et al. (2005), and Heckemann, et al. (2006), is becoming one of the most widely-used and successful image segmentation techniques in biomedical applications. By manipulating and utilizing the entire dataset of "atlases" (training images that have been previously labeled, e.g., manually by an expert), rather than some model-based average representation, MAS has the flexibility to better capture anatomical variation, thus offering superior segmentation accuracy. This benefit, however, typically comes at a high computational cost. Recent advancements in computer hardware and image processing software have been instrumental in addressing this challenge and facilitated the wide adoption of MAS. Today, MAS has come a long way and the approach includes a wide array of sophisticated algorithms that employ ideas from machine learning, probabilistic modeling, optimization, and computer vision, among other fields. This paper presents a survey of published MAS algorithms and studies that have applied these methods to various biomedical problems. In writing this survey, we have three distinct aims. Our primary goal is to document how MAS was originally conceived, later evolved, and now relates to alternative methods. Second, this paper is intended to be a detailed reference of past research activity in MAS, which now spans over a decade (2003-2014) and entails novel methodological developments and application-specific solutions. Finally, our goal is to also present a perspective on the future of MAS, which, we believe, will be one of the dominant approaches in biomedical image segmentation.},
+	Author = {Iglesias, Juan Eugenio and Sabuncu, Mert R},
+	Date-Added = {2017-02-16 23:56:07 +0000},
+	Date-Modified = {2017-02-16 23:56:07 +0000},
+	Doi = {10.1016/j.media.2015.06.012},
+	Journal = {Med Image Anal},
+	Journal-Full = {Medical image analysis},
+	Keywords = {Label fusion; Multi-atlas segmentation; Survey},
+	Mesh = {Algorithms; Humans; Image Interpretation, Computer-Assisted; Pattern Recognition, Automated; Reproducibility of Results; Sensitivity and Specificity; Subtraction Technique},
+	Month = {Aug},
+	Number = {1},
+	Pages = {205-19},
+	Pmc = {PMC4532640},
+	Pmid = {26201875},
+	Pst = {ppublish},
+	Title = {Multi-atlas segmentation of biomedical images: A survey},
+	Volume = {24},
+	Year = {2015},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1016/j.media.2015.06.012}}
 
 @article{Heckemann:2006aa,
 	Abstract = {Regions in three-dimensional magnetic resonance (MR) brain images can be classified using protocols for manually segmenting and labeling structures. For large cohorts, time and expertise requirements make this approach impractical. To achieve automation, an individual segmentation can be propagated to another individual using an anatomical correspondence estimate relating the atlas image to the target image. The accuracy of the resulting target labeling has been limited but can potentially be improved by combining multiple segmentations using decision fusion. We studied segmentation propagation and decision fusion on 30 normal brain MR images, which had been manually segmented into 67 structures. Correspondence estimates were established by nonrigid registration using free-form deformations. Both direct label propagation and an indirect approach were tested. Individual propagations showed an average similarity index (SI) of 0.754+/-0.016 against manual segmentations. Decision fusion using 29 input segmentations increased SI to 0.836+/-0.009. For indirect propagation of a single source via 27 intermediate images, SI was 0.779+/-0.013. We also studied the effect of the decision fusion procedure using a numerical simulation with synthetic input data. The results helped to formulate a model that predicts the quality improvement of fused brain segmentations based on the number of individual propagated segmentations combined. We demonstrate a practicable procedure that exceeds the accuracy of previous automatic methods and can compete with manual delineations.},

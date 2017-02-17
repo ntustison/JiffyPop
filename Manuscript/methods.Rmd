@@ -1,2 +1,64 @@
 
 # Methods
+
+
+## A brief review of joint label fusion
+
+
+
+
+## Joint intensity fusion
+
+
+
+
+
+
+
+
+
+## ITK implementation
+
+Similar to the other ANTs programs, the software encapsulating
+the methods discussed in this work are built upon the Insight Toolkit
+(ITK) and conform to ITK coding standards.  Here we describe the implementation
+and usage interface.  The program ``antsJointFusion.cxx`` uses an intuitive
+command line interface developed specifically for the ANTs toolkit.  See
+Listing 1 for the short help menu available
+at the command line.  A more comprehensive long help menu can be produced
+(not shown).  The latter provides references and documentation concerning
+parameter options.  
+
+
+\begin{lstlisting}
+COMMAND:
+     antsJointFusion
+
+OPTIONS:
+     -d, --image-dimensionality 2/3/4
+     -t, --target-image targetImage
+                        [targetImageModality0,...,targetImageModalityN]
+     -g, --atlas-image atlasImage
+                       [atlasImageModality0,...,atlasImageModalityN]
+     -l, --atlas-segmentation atlasSegmentation
+     -a, --alpha 0.1
+     -b, --beta 2.0
+     -c, --constrain-nonnegative (0)/1
+     -p, --patch-radius 2
+                        2x2x2
+     -m, --patch-metric (PC)/MSQ
+     -s, --search-radius 3
+                         3x3x3
+                         searchRadiusMap.nii.gz
+     -e, --exclusion-image label[exclusionImage]
+     -x, --mask-image maskImageFilename
+     -o, --output labelFusionImage
+                  intensityFusionImageFileNameFormat
+                  [labelFusionImage,intensityFusionImageFileNameFormat,
+                              <labelPosteriorProbabilityImageFileNameFormat>,
+                              <atlasVotingWeightImageFileNameFormat>]
+     --version
+     -v, --verbose (0)/1
+     -h
+     --help
+\end{lstlisting}

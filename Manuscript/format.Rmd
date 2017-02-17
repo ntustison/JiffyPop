@@ -11,6 +11,31 @@ header-includes:
    - \usepackage{booktabs}
    - \usepackage[final]{changes}
    - \usepackage[font={small},labelfont=bf,labelsep=colon]{caption}
+   - \usepackage{listings}
+   - \usepackage{color}
+   - \definecolor{codegreen}{rgb}{0,0.6,0}
+   - \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+   - \definecolor{codepurple}{rgb}{0,0,0}
+   - \definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+   - \lstdefinestyle{mystyle}{
+         backgroundcolor=\color{backcolour},   
+         commentstyle=\color{codegreen},
+         keywordstyle=\color{magenta},
+         numberstyle=\tiny\color{codegray},
+         stringstyle=\color{codepurple},
+         basicstyle=\linespread{0.8}\scriptsize\ttfamily,
+         breakatwhitespace=false,         
+         breaklines=true,                 
+         captionpos=b,                    
+         keepspaces=true,                 
+         numbers=none,                    
+         numbersep=5pt,                  
+         showspaces=false,                
+         showstringspaces=false,
+         showtabs=false,
+         frame=lines,
+         tabsize=2 }
+   - \lstset{style=mystyle,caption={The antsJointFusion short command line menu which is invoked using the `-h’ option. The expanded menu, which provides details regarding the possible parameters and usage options, is elicited using the `--help’ option.}}
    - \linespread{1.5}
    - \usepackage{enumitem}
    - \usepackage{tikz}

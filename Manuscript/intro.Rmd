@@ -1,13 +1,21 @@
 
 # Introduction
 
-"Wisdom-of-crowds" [@Surowiecki2004] approaches to medical image segmentation have
-proven remarkably successful.  Recent international competitions such as the
-brain labeling challenge associated with the MICCAI 2012 Workshop on Multi-Atlas
-Labeling and the 2013 MICCAI Challenge Workshop on Segmentation:
-Algorithms, Theory and Applications have demonstrated the superiority of these
-consensus-based approaches when coupled with high-performing image spatial
-normalization algorithms.
+Coupled with advanced image registration algorithms, techniques such as single atlas
+label assignment [@Heckemann:2006aa] and majority voting [@Kitller:1998aa]
+of atlases provided early, well-performing prior knowledge segmentation
+alternatives to related segmentation techniques which employ intensity-based
+partitioning of the gray-scale histogram constrained by local image neighborhood-based
+spatial priors (e.g., Markov Random  Field) [@zhang2001;@ashburner2005;@avants2011a].
+As pointed out in a recent comprehensive survey of the field [@Iglesias:2015aa],
+the popularization of multi-atlas segmentation techniques extend more than a
+decade ago with early pioneering efforts (e.g., [@Rohlfing:2003aa;@Warfield:2004aa;@Klein:2005aa]).
 
-Early techniques such as single atlas label assignment [@Heckemann:2006aa] and majority voting
-[@Kitller:1998aa]
+These multi-atlas techniques, which is an instantiation of "wisdom-of-crowds"
+[@Surowiecki2004] solution strategies, have proven remarkably successful.  Recent
+international competitions such as the
+brain labeling challenge of the _MICCAI 2012 Workshop on Multi-Atlas
+Labeling_ and the _2013 MICCAI Challenge Workshop on Segmentation:
+Algorithms, Theory and Applications_ have demonstrated the superiority of these
+consensus-based approaches when paired with high-performing image spatial
+normalization algorithms (e.g., [@Avants:2011ab]).
