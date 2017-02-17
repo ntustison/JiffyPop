@@ -97,4 +97,13 @@ default value is 0.1.
 
 __Beta.__  
 
-__Constrain non-negative.__  To estimate the matrix inversion.
+__Constrain non-negative.__  As described previously, least squares estimation
+is required for solving the atlas weights at each voxel.  The
+default method for matrix decomposition is Cholesky given its speed.[^1]
+However, such a choice could potentially produce negative weights which is
+unintuitive.  This led us to include a non-negative least squares solution
+option [@lawson] to ensure non-negative weights.
+
+[^1]:  Although other techniques, such as QR and singular value decomposition, are more stable,
+a sufficiently large ``Alpha`` value ensures non-singularity.  However, if the
+condition number is too small, SVD is used.
