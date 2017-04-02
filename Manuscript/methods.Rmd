@@ -33,6 +33,7 @@ ITK-style class:
 * ``itkWeightedVotingFusionImageFilter.h``
 * ``itkWeightedVotingFusionImageFilter.hxx``
 
+
 \begin{lstlisting}
 COMMAND:
      antsJointFusion
@@ -82,7 +83,10 @@ using JIF.
 __Atlas images.__ Each atlas set specified by the ``-g`` option consists of one or
 more modality.  It is assumed that these atlases have already been normalized to the
 target image.  The ordering of the modalities for each atlas is assumed to match the
-ordering specified for the target image and the other atlases.
+ordering specified for the target image and the other atlases.  In addition to
+spatial normalization of the input atlases to the target image, a suggested
+preprocessing step is intensity standardization to the target image (e.g.,
+[@Nyul:2000aa]).
 
 __Atlas labels.__ When performing JLF, a set of atlas labels is provided with
 each atlas set.  Pairing of each atlas label, ``-l`` option,  with each atlas,
@@ -107,7 +111,12 @@ option [@lawson] to ensure non-negative weights.
 __Patch metric.__ To determine the weights at a current voxel in the target image,
 a neighborhood patch centered at the current voxel is compared with neighboring patches in
 each atlas.  The similarity between the target and atlas neighborhood patches
-can be calculated using a variety of intensity similarity metrics.  Contributions
+can be calculated using a variety of intensity similarity metrics.
+The size of the neighborhood over which the similarity metric is calculated is
+defined by the ``--patch-radius`` option.  The ``--search-radius`` defines the
+the search space in the atlases which accounts for inaccuracies in spatial
+normalization.  Note that a search map image can
+be specified in the case of spatially varying normalization certainty.  Contributions
 from additional modality images are simply concatenated into the similarity metric
 calculation.  The original JLF work employed Pearson's correlation
 [@Wang:2013ab;@Wang:2013aa] which works very well.  Future work includes the
@@ -116,3 +125,7 @@ possible inclusion of other patch-based metrics (e.g., mean squares [@Manjon:201
 [^1]:  Although other techniques, such as QR and singular value decomposition, are more stable,
 a sufficiently large ``Alpha`` value ensures non-singularity.  However, if the
 condition number is too small, SVD is used.
+
+__Output.__  The consensus labeling image comprises the principal JLF output.  
+Optional auxiliary images include the label posterior and atlas voting images.
+For JIF, the output includes the imputed modalities.  

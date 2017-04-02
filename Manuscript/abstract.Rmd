@@ -1,7 +1,7 @@
 
 # Abstract
 
-Consensus techniques have demonstrated remarkable utility in various medical
+Multi-atlas consensus techniques have demonstrated remarkable utility in various medical
 imaging segmentation tasks.  Joint label fusion (JLF) employs spatially normalized
 atlas sets---gray-scale intensity images with corresponding segmentation labels---to
 segment unlabeled images using various weighting schemes.  The technique

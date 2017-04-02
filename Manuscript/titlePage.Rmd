@@ -7,7 +7,7 @@ $ $
 
 \LARGE
 
-{\bf Joint Intensity Fusion}
+{\bf Multi-Atlas Joint Intensity Fusion}
 
 \vspace{0.2 cm}
 
