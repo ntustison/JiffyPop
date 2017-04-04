@@ -4,7 +4,7 @@
 Coupled with advanced image registration algorithms, techniques such as single atlas
 label assignment [@Heckemann:2006aa] and majority voting [@Kitller:1998aa]
 of atlases provided early, well-performing prior knowledge segmentation
-alternatives to related segmentation techniques which employ intensity-based
+alternatives to other segmentation techniques which employ intensity-based
 partitioning of the gray-scale histogram constrained by local image neighborhood-based
 spatial priors (e.g., Markov Random  Field) [@zhang2001;@ashburner2005;@avants2011a].
 As pointed out in a recent comprehensive survey of the field [@Iglesias:2015aa],

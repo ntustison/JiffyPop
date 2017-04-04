@@ -1,17 +1,19 @@
 
 # Abstract
 
-Multi-atlas consensus techniques have demonstrated remarkable utility in various medical
-imaging segmentation tasks.  Joint label fusion (JLF) employs spatially normalized
-atlas sets---gray-scale intensity images with corresponding segmentation labels---to
-segment unlabeled images using various weighting schemes.  The technique
-of [@Wang:2013aa;@Wang:2013ab] avoids informational redundancy in the atlas voting
-scheme by considering the atlas set as a whole (versus individually) in determining
-the optimal weights.  In this work we extend this methodology to the
+Consensus methodologies have demonstrated remarkable utility in various medical
+imaging segmentation tasks.  Joint label fusion (JLF) techniques employ
+spatially normalized atlas sets---gray-scale intensity images with corresponding
+regional labels---to segment unlabeled images using various weighting schemes.
+The specific approach detailed in
+[@Wang:2013aa;@Wang:2013ab] avoids informational redundancy in the atlas voting
+scheme by considering the atlas set as a whole in determining the optimal
+weight contributions.  In this work we extend this work to the
 estimation of intensity information in multi-modal image data sets, which
 we denote as _joint intensity fusion (JIF)_.  JIF has several potential applications
 including removal of imaging artifacts (e.g., motion), removal of pathologies
-(e.g., tumour, lesions), imputation of missing modality data, and template
+(e.g., tumour, lesions), imputation of missing modality data, reduction of certain
+confounds (e.g., site effects), and template
 enhancement.  Evaluation is performed on a variety of data \textcolor{red}{
 \ldots need more here}.  We provide an open-source implementation in the the well-known
 Advanced Normalization Tools (ANTs) software package, based on the Insight Toolkit
